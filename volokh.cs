@@ -38,11 +38,11 @@ namespace volokhmi2
 			{
 				if (buff[i] == max_buf)
 				{
-					summ += buff[i];
-					buf_count++;
+					summ += i;
+					buf_count++; 
 				}
 			}
-			moda = (double)max_pos / (double)buf_count;
+			moda = summ / (double)buf_count;
 			res = Math.Pow((double)geom, (double)(1.0 / N));
 			Console.WriteLine("Мода массива {0} Среднее геометрическое {1:0.000}",moda,res);
 		}
